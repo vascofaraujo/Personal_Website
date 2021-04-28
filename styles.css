@@ -194,10 +194,11 @@ h1{
 
 .main_container h1{
     margin-bottom: 50px;
+    
 }
 
-.main_container h2{
-    margin-bottom: 10px;
+.main_container h1:hover{
+    color: var(--wild-color);
 }
 
 
@@ -246,11 +247,32 @@ h1{
 
 .main_pic{
     margin-right: 25%;
+    position: relative;
 }
 
-.main_pic img{
-    width: 300px;
+.main_pic img.pic-hover {
+  position: absolute;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
 }
+
+.main_pic:hover img.pic-hover {
+    opacity: 1;
+}
+
+.main_pic img.pic-hover2 {
+    position: absolute;
+    object-fit: contain;
+    left: -50px;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  
+  .main_pic:hover img.pic-hover2 {
+      opacity: 1;
+  }
+
 
 @media screen and (max-width: 900px){
     .main_container{
