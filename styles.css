@@ -2,8 +2,7 @@
     --primary-color: #333;
     --secondary-color: #eee;
     --wild-color: rgb(43, 92, 197);
-    --wild-color2: #4924D1;
-    --wild-color3: #258FDB;
+    --wild-color2: rgb(194, 179, 41);
 }
 
 * {
@@ -198,13 +197,12 @@ h1{
 }
 
 .main_container h1:hover{
-    color: var(--wild-color);
+    color: var(--wild-color2);
 }
 
 
 .main_btn{
     font-size: 1rem;
-    /*background: linear-gradient(to top, #ec3c36 0%, #D2352F 100%);*/
     background: var(--wild-color);
 
     padding: 10px 10px;
@@ -232,7 +230,7 @@ h1{
     left: 0;
     width: 0;
     height: 100%;
-    background: #ec3c36;
+    background: var(--wild-color2);
     transition: all 0.35s;
     border-radius: 10px;
 }
@@ -246,13 +244,13 @@ h1{
 }
 
 .main_pic{
-    margin-right: 25%;
     position: relative;
 }
 
 .main_pic img.pic-hover {
   position: absolute;
   object-fit: contain;
+  left: 60%;
   opacity: 0;
   transition: opacity .2s;
 }
@@ -264,7 +262,7 @@ h1{
 .main_pic img.pic-hover2 {
     position: absolute;
     object-fit: contain;
-    left: -50px;
+    right: 60%;
     opacity: 0;
     transition: opacity .2s;
   }
@@ -291,7 +289,8 @@ h1{
     }
 
     .main_pic{
-        margin-right: 25%;
+        align-items: center;
+        right: 5%;
     }
 
     .main_pic img{
@@ -343,3 +342,27 @@ h1{
     padding-top:6rem;
 }
 
+
+
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .footer-container{
+    display:flex;
+    flex-flow: column;
+    padding: 0.5rem;
+}
+
+footer .footer-socials a>i{
+    color: var(--secondary-color);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+footer .footer-socials a>i:hover{
+    color: var(--wild-color);
+}
