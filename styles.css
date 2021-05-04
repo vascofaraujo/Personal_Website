@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;    
+    font-family: 'Roboto Mono', monospace;  
 }
 
 h1{
@@ -37,7 +37,6 @@ h1{
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 0 2rem;
     padding: 0 50px;
 }
   
@@ -101,7 +100,6 @@ h1{
       top: -10000px;
       opacity: 0;
       height: auto;
-      z-index: -1;
       background-color: var(--wild-color);
     }
   
@@ -112,9 +110,7 @@ h1{
       opacity: 1;
       transition: all 0.5s ease-in-out;
       /*transition-delay: 0.5s;*/
-
-      z-index: 99;
-      height: 88vh;
+    
       font-size: 1.6rem;
       color: var(--wild-color);
     }
@@ -295,6 +291,14 @@ h1{
 
     .main_pic img{
         width: 200px;
+    }
+
+    .main_pic img.pic-hover {
+        left: 40%;
+    }
+    
+    .main_pic img.pic-hover2 {
+        right: 40%;
     }
 
     
